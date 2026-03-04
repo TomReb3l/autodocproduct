@@ -17,6 +17,16 @@
   - 10’ διάρκεια για όλα
   - 20’ διάρκεια σε ένα συγκεκριμένο template-τύπο (π.χ. ανιχνεύεται από λέξεις στο όνομα αρχείου)
   - διάλειμμα `BreakMinutes` (2’/5’ κτλ) μεταξύ εγγράφων
+ 
+### Σειρά εκθέσεων (πολύ σημαντικό για τις ώρες)
+Για να υπολογίζονται σωστά οι ώρες έναρξης/περάτωσης, τα templates πρέπει να έχουν **σαφή σειρά**.
+
+Προτείνεται να βάζετε **αρίθμηση στην αρχή του ονόματος αρχείου**, ώστε η σειρά να είναι ξεκάθαρη, π.χ.:
+- `TEMPLATE_1. ... .docx`
+- `TEMPLATE_2. ... .docx`
+- `TEMPLATE_3. ... .docx`
+
+Το macro επεξεργάζεται τα templates με βάση τη σειρά που επιστρέφει το σύστημα αρχείων. Η αρίθμηση στο όνομα βοηθάει ώστε να υπάρχει προβλέψιμη σειρά και να ξεκινάει από τη σωστή έκθεση για τους χρονικούς υπολογισμούς.
 
 ### Πεδίο χρήσης
 Το project **δεν είναι αποκλειστικά για χρήση από αστυνομικές/δημόσιες αρχές**.  
@@ -54,6 +64,16 @@
   - Optionally applies time-based rules (e.g., calculated start/end timestamps per generated document)
 
 Each run produces a clean set of output documents ready to share, print, or archive.
+
+### Document order (important for time calculations)
+To calculate start/end times correctly, templates should have a **clear and predictable order**.
+
+We recommend adding a **leading number** to each template filename, for example:
+- `TEMPLATE_1. ... .docx`
+- `TEMPLATE_2. ... .docx`
+- `TEMPLATE_3. ... .docx`
+
+The macro processes templates based on the order returned by the file system. A consistent numbering scheme ensures a predictable sequence and correct time progression.
 
 ### Quick Setup (Word 2016 Windows)
 1. Open `examples/00_Controller_example.docx` and **Save As → .docm**.

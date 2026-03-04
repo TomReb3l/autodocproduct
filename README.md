@@ -39,7 +39,10 @@
 4. Βεβαιωθείτε ότι στα templates έχετε:
    - `{{OraEnarxis}}` στην αρχή (ώρα έναρξης)
    - `{{OraPeratosis}}` στο τέλος (ώρα περάτωσης)
-5. Τρέξτε: **Developer → Macros → Generate_Reports_To_OUTPUT_From_Table → Run**.
+5. Τρέξτε: **Developer → Macros → Generate_Reports_To_OUTPUT_From_Table → Run** ή
+   - Πατήστε **Alt + F8**
+   - Επιλέξτε `Generate_Reports_To_OUTPUT_From_Table`
+   - Πατήστε **Run / Εκτέλεση**
 
 > Αν τα macros είναι blocked: κάντε Unblock στο .docm ή προσθέστε τον φάκελο σε Trusted Locations.
 
@@ -82,7 +85,10 @@ The macro processes templates based on the order returned by the file system. A 
 4. Ensure templates contain:
    - `{{OraEnarxis}}` for start time
    - `{{OraPeratosis}}` for end time
-5. Run: **Developer → Macros → Generate_Reports_To_OUTPUT_From_Table → Run**.
+5. Run: **Developer → Macros → Generate_Reports_To_OUTPUT_From_Table → Run** or
+   - Press **Alt + F8**
+   - Select `Generate_Reports_To_OUTPUT_From_Table`
+   - Click **Run**
 
 ### Scope of use
 This project is **not exclusively intended for law enforcement / public authorities**.  

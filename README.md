@@ -1,4 +1,4 @@
-# autodocproduct
+# auto_doc_product
 
 **GR:** Παραγωγή τελικών εγγράφων Word (DOCX) από templates με placeholders, με ένα κλικ μέσω VBA macro.  
 **EN:** One-click generation of final Word documents (DOCX) from placeholder templates using a VBA macro.
